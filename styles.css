@@ -1,0 +1,330 @@
+/*to import a font*/
+@font-face {
+    font-family: barlow;
+    src: url("./fonts/Barlow-Light.ttf");
+}
+/*to aplly to every element*/
+*{
+    
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 100%;
+    min-width: 550px;
+    font-weight: 600;
+    max-width: 1444px;
+    
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    background: url("./images/desktop/image-header.jpg") bottom center no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
+.header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.header img{
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar span{
+    color: white;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.main-arrow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    
+}
+.main-arrow span{
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    color: white;
+    font-family:  'Times New Roman';
+    font-size: 65px;
+    
+}
+.main-arrow img{ 
+    margin-bottom: 250px;
+}
+.header-botton{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 8px 30px;
+    height: 20px;
+}
+.header-botton:hover{
+    color: white;
+    background-color: hsl(198, 62%, 26%);
+}
+.section1, .section2, .section3{
+    display: flex;
+    height: 350px;
+}
+
+    
+
+.left, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.section1-text, .section2-text{
+    font-family: "barlow";
+    width: 70%;
+    
+}
+.section1-text h1, .section2-text h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.section1-text p, .section2-text p{
+    font-weight: normal;
+    color: gray;
+    margin: 15px auto;
+}
+.learnmore-botton span{
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: yellow 0px 5px 2px;
+}
+.learnmore-botton2 span{
+    cursor: pointer;
+    box-shadow: hsl(7, 99%, 70%) 0px 5px 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.right img, .left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.section3-left, .section3-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.section3-left{
+    background: url("./images/desktop/image-graphic-design.jpg") top left no-repeat;
+    background-size: cover;
+}
+
+.section3-right{
+    background: url("./images/desktop/image-photography.jpg") top left no-repeat;
+    background-size: cover;
+}
+
+.section3-text-left{
+    align-self: flex-end;
+    color: hsl(167, 40%, 24%);
+    font-family: barlow;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.section3-text-right{
+    align-self: flex-end;
+    color: hsl(198, 62%, 26%);
+    font-family: barlow;
+    width: 60%;
+    margin-bottom: 10px;
+}
+.section3-text-left h1, .section3-text-right h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.section3-text-left p, .section3-text-right p{
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.clients{
+    display: flex;
+    justify-content: space-between;
+
+}
+.client{
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    align-items: center;
+    justify-content: space-between;
+}
+.client p{
+    font-family: barlow;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.client-image img{
+    object-fit: contain;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.client-image{
+    margin-bottom: 20px;
+}
+.testimonial span{
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+    color: gray;
+}
+.client-details{
+    text-align: center;
+}
+.client-details h1{
+    margin-bottom: 15px;
+}
+.client-details h4{
+    color: gray;
+    font-family: barlow;
+    font-size: 13px;
+}
+.section5{
+    display: flex;
+}
+.section5 div.imgs{
+    display: flex;
+    flex: 0.25;
+}
+.section5 div.imgs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer{
+    background-color: hsl(168, 34%, 41%);
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo{
+    margin-bottom: 30px;
+}
+.footer-navbar{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    
+}
+.footer-navbar span{
+    cursor: pointer;
+    padding: 2px;
+    color: hsl(167, 40%, 24%);
+    margin-right: 10px;
+}
+.footer-icons{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    height: 30px;
+    margin-top: 30px;
+}
+.footer-icons img{
+    background-color: black;
+    border: 1px solid hsl(167, 40%, 24%);
+    padding: 2px;
+    margin-right: 10px;
+}
+#mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width: 551px) {
+        body{
+            overflow-x: hidden;
+        }
+        .section1, .section2, .section3{
+            height: 700px;
+            flex-direction: column;
+        }
+        *{
+            outline: 1px solid red;
+        }
+        .left, .right{
+            flex-direction: column;
+        }
+        .testimonial, .clients{
+            flex-direction: column;
+        }
+        .main-arrow span{
+            font-size: 40px;
+        }
+
+        .section5{
+           display: block;
+           
+        }
+        .section5 div.imgs{
+            float: left;
+            
+        }
+        .section5 div.imgs img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350px;
+            width: 275px;
+            object-fit: cover;
+        }
+        .footer{
+            clear: both;
+        }
+
+        .navbar{
+            display: none;
+        }
+        #mobile-menu{
+            display: block;
+            margin-right: 30px;
+        }
+
+        #mobile-menu:hover{
+           
+        }
+}
